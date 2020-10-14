@@ -8,10 +8,10 @@ public class Kata2 {
     
     
     public static void main(String[] args) {
-        Integer[] data = {1, 3, 4, 5, 6, 3, 1, 4, 7, 8, 9, 2, 4, 6, 7, 10, 25, 8,2};
+        String[] data = {"Rosa","Pepe","María","Pepe","Pepe","Rosa"};
         Histogram histo = new Histogram(data);
-        Map<Integer,Integer> histogr = histo.getHistogram();
-        for (Map.Entry<Integer,Integer> entry : histogr.entrySet()) {
+        Map<String,Integer> histogr = histo.getHistogram();
+        for (Map.Entry<String,Integer> entry : histogr.entrySet()) {
             System.out.println("Key = " +entry.getKey() + ", Value = " + entry.getValue());
         }
         
